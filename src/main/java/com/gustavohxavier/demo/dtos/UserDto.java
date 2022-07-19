@@ -1,20 +1,12 @@
 package com.gustavohxavier.demo.dtos;
 
-import com.gustavohxavier.demo.entities.User;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
-//@Component
-@NoArgsConstructor
-@AllArgsConstructor
+@Component
+@Data
 public class UserDto {
 
     private Long id;
     private String name;
-
-    public UserDto(User user){
-        id = user.getId();
-        name = user.getName();
-    }
 }
